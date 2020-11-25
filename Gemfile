@@ -15,7 +15,7 @@ gem 'webpacker', '~> 4.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem "rspec-rails", "~> 4.0"
+  gem 'rspec-rails', '~> 4.0'
 end
 
 group :development do
@@ -34,3 +34,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+gem 'capybara-screenshot', '~> 1.0'
