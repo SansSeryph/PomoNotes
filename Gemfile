@@ -36,3 +36,5 @@ group :test do
 end
 
 gem 'capybara-screenshot', '~> 1.0'
+
+gem "haml-rails", "~> 2.0"
