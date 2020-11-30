@@ -66,4 +66,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  # Use old style 'should' keywords
+  config.expect_with(:rspec) { |c| c.syntax = :should }
 end

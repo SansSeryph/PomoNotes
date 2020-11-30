@@ -5,6 +5,12 @@ require:
 AllCops:
   NewCops: enable
 
+Capybara/FeatureMethods:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 
