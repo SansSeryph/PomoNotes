@@ -1,12 +1,13 @@
 # Setup via VS Code Remote Containers With Ruby on Rails + MySQL
 
-[VS Code Remote Containers Development docs](https://code.visualstudio.com/docs/remote/containers)
+[VS Code Remote Containers Development docs](https://code.visualstudio.com/docs/remote/remote-overview)
 
 ## Prerequisites
 
 * [docker](https://docs.docker.com/engine/install/) (tested with 19.03.13, build 4484c46d9d)
 * [docker-compose](https://docs.docker.com/compose/install/) (tested with 1.27.4, build 40524192))
-
+* VS Code
+* [VS Code Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 ## Steps
 
 1. Clone the repository
