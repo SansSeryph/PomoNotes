@@ -34,13 +34,3 @@ Ways you can run tests:
 * To run a specific example(s) within a file, include a colon with the line number of the block of code you want to run.
   * It can be a specific test (`scenario` or `it` block) or a set of tests (`describe` or `context` block).
     * Ex: `bundle exec rspec spec/features/timer_spec.rb:23`
-
-## To Dos
-
-*Note: These will probably get moved into Issues at some point.*
-
-Building out the timer functionality:
-
-* Fix pending specs (running the test suite will show which ones)
-* Add specs that ensure proper start-pause-start behavior. Right now, clicking pause and then start will reset the timer instead of continuing where it left off.
-* Add specs + code for resetting the timer. See [Tomato Timer](https://tomato-timer.com/) for an example on how that should work.
