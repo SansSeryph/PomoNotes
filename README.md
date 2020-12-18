@@ -6,6 +6,8 @@ The tools used for this project is Rails for the backend and React for the front
 
 ## Development Setup
 
+### Native Development Setup
+
 *Note: There isn't a database step required at this point in time as it's not being used.*
 
 1. Clone the repo into your workspace
@@ -18,6 +20,10 @@ The tools used for this project is Rails for the backend and React for the front
    * Rails: `bundle exec rails server`
    * Webpack: `bundle exec bin/webpack-dev-server`
 1. Open the browser to [localhost:3000](localhost:3000) and make sure you see the app.
+
+### VS Code Containerized Development Setup
+
+See these [setup docs](./.devcontainer/README.md)
 
 ## Test Suite
 

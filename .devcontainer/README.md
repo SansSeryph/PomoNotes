@@ -17,10 +17,17 @@
 1. Open a new terminal inside VS Code. By default this will occur within the development container
 1. Install server-side dependencies
 
-    ```bundle install```
+    ```
+    rvm install $(cat .ruby-version)
+    bundle install
+    ```
 1. Install client-sided dependencies
 
     ```yarn install```
+
+1. Run the [test suite](../README.md#Test_Suite)
+
+    ```bundle exec rspec```
 1. Serve the app on port `3000`.
 
     ```rails s -b 0.0.0.0 -p 3000```
