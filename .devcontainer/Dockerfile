@@ -2,9 +2,6 @@
 ARG VARIANT=2.7.2
 FROM mcr.microsoft.com/vscode/devcontainers/ruby:${VARIANT}
 
-# Install Rails
-RUN gem install rails webdrivers 
-
 ARG NODE_VERSION="lts/*"
 RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"
 
