@@ -21,27 +21,25 @@
     rvm install $(cat .ruby-version)
     bundle install
     ```
-1. Install client-sided dependencies
+1. Install client-side dependencies
 
     ```yarn install```
 
 1. Run the [test suite](../README.md#Test_Suite)
 
     ```bundle exec rspec```
-1. Serve the app on port `3000`.
+1. Serve the rails app.
 
-    ```rails s -b 0.0.0.0 -p 3000```
+    ```rails s -b 0.0.0.0```
+
+1. Run the dev webpack server
+
+    ```bundle exec bin/webpack-dev-server```
+
 1. Visit the app in your browser
 
     ```http://localhost:3000```
 
-1. (Optional) Explore the database via phpMyAdmin
-
-    ```http://localhost:8080```
-    
-    Authenticate using credentials found in `docker-compose.yml` (`services:db:environment`)
-
-1. (Optional) If you prefer a different database client, you may connect it to `localhost:3306` using credentials found in `docker-compose.yml` (`services:db:environment`).
 
 ## Inspired by:
 
