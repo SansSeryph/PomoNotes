@@ -11,6 +11,7 @@ services:
     command: ["/bin/bash", "/root/entrypoint.sh"]
     ports:
       - '3000:3000'
+      - '3035:3035'
     volumes:
       # git
       - ~/.gitconfig:/root/.gitconfig

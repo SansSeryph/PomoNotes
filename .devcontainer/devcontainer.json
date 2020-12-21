@@ -14,7 +14,7 @@
 		"misogi.ruby-rubocop",
 		"castwide.solargraph"
 	],
-	"forwardPorts": [3000],
+	"forwardPorts": [3000, 3035],
 	"postCreateCommand": "ruby --version",
 	"remoteUser": "vscode"
 }
