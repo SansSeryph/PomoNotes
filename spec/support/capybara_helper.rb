@@ -1,3 +1,5 @@
+# copied from https://dev.to/fdoxyz/headless-chrome-dual-mode-tests-for-ruby-on-rails-4p6g
+
 Capybara.asset_host = 'localhost:3000'
 RSpec.configure do |config|
   config.include Capybara::DSL
@@ -18,8 +20,10 @@ RSpec.configure do |config|
     chrome_args.each { |arg| opts.add_argument(arg) }
     Capybara::Selenium::Driver.new(app, browser: :chrome, options: opts, desired_capabilities: caps)
   end
-
-  # Switch between :chrome / :headless_chrome to see tests run in chrome
+  # The default behavior is Headless. The usual clean, quick, and simple.
+  # $ bundle exec rspec
+  # Set the HEADLESS environment variable to something falsy to open a Chrome window for interactive debugging
+  # $ HEADLESS=0 bundle exec rspec
   case ENV['HEADLESS']
   when 'true', 1, nil
     Capybara.javascript_driver = :headless_chrome
