@@ -42,13 +42,3 @@ Ways you can run tests:
     * Ex: `bundle exec rspec spec/features/timer_spec.rb:23`
 * By default tests run headless. Set the HEADLESS environment variable to something falsy to open a Chrome window for interactive debugging.
     * Ex: `HEADLESS=0 bundle exec rspec`
-
-## To Dos
-
-*Note: These will probably get moved into Issues at some point.*
-
-Building out the timer functionality:
-
-* Fix pending specs (running the test suite will show which ones)
-* Add specs that ensure proper start-pause-start behavior. Right now, clicking pause and then start will reset the timer instead of continuing where it left off.
-* Add specs + code for resetting the timer. See [Tomato Timer](https://tomato-timer.com/) for an example on how that should work.
