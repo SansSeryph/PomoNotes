@@ -40,6 +40,8 @@ Ways you can run tests:
 * To run a specific example(s) within a file, include a colon with the line number of the block of code you want to run.
   * It can be a specific test (`scenario` or `it` block) or a set of tests (`describe` or `context` block).
     * Ex: `bundle exec rspec spec/features/timer_spec.rb:23`
+* By default tests run headless. Set the HEADLESS environment variable to something falsy to open a Chrome window for interactive debugging.
+    * Ex: `HEADLESS=0 bundle exec rspec`
 
 ## To Dos
 
