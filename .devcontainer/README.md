@@ -1,4 +1,4 @@
-# Setup via VS Code Remote Containers With Ruby on Rails + MySQL
+# Setup via VS Code Remote Containers With Ruby on Rails
 
 [VS Code Remote Containers Development docs](https://code.visualstudio.com/docs/remote/remote-overview)
 
