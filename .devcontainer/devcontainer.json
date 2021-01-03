@@ -1,0 +1,22 @@
+{
+	"name": "PomoNotes",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [
+		"rebornix.Ruby",
+		"oderwat.indent-rainbow",
+		"dbaeumer.vscode-eslint",
+		"misogi.ruby-rubocop",
+		"castwide.solargraph"
+	],
+	"forwardPorts": [
+		3000,
+		3035
+	],
+	"postCreateCommand": "ruby --version",
+	"remoteUser": "vscode"
+}

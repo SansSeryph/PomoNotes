@@ -6,6 +6,8 @@ The tools used for this project is Rails for the backend and React for the front
 
 ## Development Setup
 
+### Native Development Setup
+
 *Note: There isn't a database step required at this point in time as it's not being used.*
 
 1. Clone the repo into your workspace
@@ -18,6 +20,10 @@ The tools used for this project is Rails for the backend and React for the front
    * Rails: `bundle exec rails server`
    * Webpack: `bundle exec bin/webpack-dev-server`
 1. Open the browser to [localhost:3000](localhost:3000) and make sure you see the app.
+
+### VS Code Containerized Development Setup
+
+See these [setup docs](./.devcontainer/README.md)
 
 ## Test Suite
 
@@ -34,3 +40,5 @@ Ways you can run tests:
 * To run a specific example(s) within a file, include a colon with the line number of the block of code you want to run.
   * It can be a specific test (`scenario` or `it` block) or a set of tests (`describe` or `context` block).
     * Ex: `bundle exec rspec spec/features/timer_spec.rb:23`
+* By default tests run headless. Set the HEADLESS environment variable to something falsy to open a Chrome window for interactive debugging.
+    * Ex: `HEADLESS=0 bundle exec rspec`

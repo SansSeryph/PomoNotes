@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VARIANT: 2.7
+        NODE_VERSION: "lts/*"
+    command: ["/bin/bash", "/root/entrypoint.sh"]
+    ports:
+      - '3000:3000'
+      - '3035:3035'
+    volumes:
+      # git
+      - ~/.gitconfig:/root/.gitconfig
+      # all source code
+      - ..:/workspace
+      # dependency caches
+      - node-cache:/workspace/node_modules
+      - bundle-cache:/usr/local/bundle
+      - system-gem-cache:/usr/local/lib/ruby/gems
+      - user-gem-cache:/home/vscode/.gem
+      - rvm-cache:/usr/local/rvm
+      - chrome-cache:/root/chrome
+
+volumes:
+  node-cache:
+  bundle-cache:
+  system-gem-cache:
+  user-gem-cache:
+  rvm-cache:
+  chrome-cache:
