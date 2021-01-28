@@ -34,6 +34,8 @@ The suite is comprised of the following tools:
 
 Ways you can run tests:
 
+### Ruby Tests
+
 * To run the full test suite: `bundle exec rspec`
 * To run a file: `bundle exec rspec path/to/your/file_spec.rb`
   * For example: `bundle exec rspec spec/features/timer_spec.rb`
@@ -42,3 +44,6 @@ Ways you can run tests:
     * Ex: `bundle exec rspec spec/features/timer_spec.rb:23`
 * By default tests run headless. Set the HEADLESS environment variable to something falsy to open a Chrome window for interactive debugging.
     * Ex: `HEADLESS=0 bundle exec rspec`
+
+### JavaScript Tests
+* `npm run test`

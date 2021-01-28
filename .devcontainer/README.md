@@ -25,9 +25,8 @@
 
     ```yarn install```
 
-1. Run the [test suite](../README.md#Test_Suite)
+1. Run the [test suite](../README.md#Test_Suite). (See main README for details)
 
-    ```bundle exec rspec```
 1. Serve the rails app.
 
     ```rails s -b 0.0.0.0```

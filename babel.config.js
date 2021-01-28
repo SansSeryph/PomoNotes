@@ -53,7 +53,8 @@ module.exports = function(api) {
       [
         '@babel/plugin-proposal-class-properties',
         {
-          loose: true
+          loose: true,
+          spec: true
         }
       ],
       [
